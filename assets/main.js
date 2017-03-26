@@ -3,16 +3,16 @@ var map = L.map('map', {
     zoom: 8
 });
 
+var layerGoogle = new L.Google('ROADMAP', {
+    attribution: '&copy; <a href="https://www.google.com/maps">Google Maps</a> contributors'
+});
+
 var layerMapSurfer = new L.tileLayer("http://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}", {
     attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 });
 
 var layerOSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-});
-
-var layerGoogle = new L.Google('ROADMAP', {
-    attribution: '&copy; <a href="https://www.google.com/maps">Google Maps</a> contributors'
 });
 
 var layerMapboxImagery = new L.tileLayer('https://{s}.tiles.mapbox.com/v4/openstreetmap.map-inh7ifmo/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJhNVlHd29ZIn0.ti6wATGDWOmCnCYen-Ip7Q', {
@@ -56,9 +56,9 @@ var layerBingAerial = new BingLayer('http://t{s}.tiles.virtualearth.net/tiles/a{
 
 
 var baseLayers = {
+    "Google Road": layerGoogle,
     "MapSurfer": layerMapSurfer,
     "OpenStreetMap": layerOSM,
-    "Google Road": layerGoogle,
     "Mapbox Imagery": layerMapboxImagery,
     "Bing Aerial": layerBingAerial
 };
@@ -69,7 +69,7 @@ L.control.layers(baseLayers, null, {
 }).addTo(map);
 
 
-map.addLayer(layerMapSurfer);
+map.addLayer(layerGoogle);
 
 
 

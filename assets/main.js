@@ -15,7 +15,7 @@ var layerGoogle = new L.Google('ROADMAP', {
     attribution: '&copy; <a href="https://www.google.com/maps">Google Maps</a> contributors'
 });
 
-var layerMapboxImagery = new L.tileLayer('http://{s}.tiles.mapbox.com/v4/openstreetmap.map-inh7ifmo/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJhNVlHd29ZIn0.ti6wATGDWOmCnCYen-Ip7Q', {
+var layerMapboxImagery = new L.tileLayer('https://{s}.tiles.mapbox.com/v4/openstreetmap.map-inh7ifmo/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJhNVlHd29ZIn0.ti6wATGDWOmCnCYen-Ip7Q', {
     maxNativeZoom: 17,
     maxZoom: 18,
     attribution: '&copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a>'

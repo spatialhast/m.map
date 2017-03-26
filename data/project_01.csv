@@ -1,0 +1,6 @@
+X,Y,Address,City,State,Zip Code,Country,addrtype
+-95.496701,30.1730126,10 Greeningdon St,The Woodlands,Texas,77381,US,premise
+-97.8035675,30.2770284,100 Blue Ridge Trl #2,Austin,Texas,78746,US,subpremise
+-97.6224676,30.4503777,1000 Parkview Drive,Pflugerville,Texas,78660,US,premise
+-97.7318843,30.2689551,1000 San Marcos Street #454,Austin,Texas,78702,US,subpremise
+-97.737197,30.517966,1000 Spring Tree St.,Round Rock,Texas,78681,US,street_address
